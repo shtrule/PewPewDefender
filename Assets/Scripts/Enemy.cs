@@ -22,7 +22,17 @@ public class Enemy : MonoBehaviour
         var damageDealer = collision.gameObject.GetComponent<DamageDealer>();
         if (damageDealer != null)
         {
-            health -= damageDealer.GetDamage();
+            ProcessHit(damageDealer);
+        }
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.GetDamage();
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
