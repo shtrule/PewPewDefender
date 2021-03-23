@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
         var newXPosition = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
         var newYPosition = Mathf.Clamp(transform.position.y + deltaY, yMin, yMax);
 
-        transform.position = new Vector2(newXPosition, newYPosition);
+        transform.position = new Vector3(newXPosition, newYPosition, transform.position.z);
     }
 
     private void Fire()
