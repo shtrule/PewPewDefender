@@ -5263,7 +5263,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 2
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.9716981, g: 0.9126282, b: 0.1054201, a: 0.49019608}
+      maxColor: {r: 0.33333334, g: 0.8773585, b: 0.6662958, a: 0.5686275}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
