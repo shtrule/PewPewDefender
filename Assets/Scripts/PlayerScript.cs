@@ -33,9 +33,10 @@ public class PlayerScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var damageDealer = collision.gameObject.GetComponent<DamageDealer>();
-        if (damageDealer != null)
+        if (!damageDealer)
         {
             ProcessHit(damageDealer);
+            damageDealer.Hit();
         }
     }
 
