@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -6739542001738431636}
   - component: {fileID: 1809146363877442882}
   - component: {fileID: -336252284119096254}
+  - component: {fileID: 2509098629433979912}
+  - component: {fileID: 8451221147597755688}
   m_Layer: 9
   m_Name: Enemy Blue
   m_TagString: Untagged
@@ -132,7 +134,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -148,3 +150,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.03, y: 0.84}
   m_EdgeRadius: 0
+--- !u!50 &2509098629433979912
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2696964470672815537}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &8451221147597755688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2696964470672815537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62d6b6ffab4a6241b5ac60786888836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 200
